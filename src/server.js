@@ -105,7 +105,7 @@ app.get('/miis/:format', async (request, response) => {
 
         }
 
-            // Uses account PID (Samtendo Network) to get Mii
+            // Uses account PID (Pretendo Network) to get Mii
                if (pid) {
                 const miiDataz = await NnidResolver.miiFromPid(pid);
                 if (!miiDataz) {
@@ -125,7 +125,7 @@ app.get('/miis/:format', async (request, response) => {
                             return response.send(MyMii);}
                } 
 
-                // Uses SNID (Samtendo Network ID) to get Mii
+                // Uses PNID (Pretendo Network ID) to get Mii
                               if (username) {
                 const pidz = await NnidResolver.pidFromUserId(username);
                 if (!pidz) {
@@ -170,7 +170,7 @@ app.get('/miis/:username/:expression/:format', async (request, response) => {
         return response.send('Format not valid')
     }
 
-                // Uses SNID (Samtendo Network ID) to get Mii
+                // Uses PNID (Pretendo Network ID) to get Mii
                               if (username) {
                 const pidz = await NnidResolver.pidFromUserId(username);
                 if (!pidz) {
