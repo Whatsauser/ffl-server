@@ -43,7 +43,7 @@ export default class NnidResolver {
    * API base for Pretendo Network.
    * Note that this blocks HTTP/2 clients, and a workaround for Bun is applied.
    */
-  static baseUrl = 'https://account.samtendo.net/v1/api';
+  static baseUrl = 'https://account.pretendo.cc/v1/api';
   // account.nintendo.net would require a client certificate, however
   // its /v1/api/miis endpoint stopped working in 2024.
 
